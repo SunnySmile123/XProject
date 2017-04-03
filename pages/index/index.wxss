@@ -1,0 +1,39 @@
+/**index.wxss**/
+.my-swiper image{
+  width: 100%;
+  height:100%;
+}
+
+.wrap{
+	display: inline-block;
+}
+.wrap-item{
+	display: inline-block;
+	width: 33%;
+	height: 33%;
+	line-height: 6rem;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+
+}
+
+.imgItem{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+
+}
+
+ /*不支持 :nth-child(2);*/
+.wrap-item.exp{
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+
+/**隐藏scroll-view 滚动条**/
+::-webkit-scrollbar{
+	width:0;
+	height: 0;
+	color: transparent;
+}
+
