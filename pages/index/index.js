@@ -16,42 +16,51 @@ Page({
 
     navItems:[
       {
-        name:'堂食',
-        url:"../../images/top/b1.png"
+        name:'星巴克',
+        imgUrl:"../../images/top/b1.png",
+        url:"../../images/url/starBucks.jpg"
       },
       {
         name:'外卖',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
         isSplot:true
       },
       {
         name:'外带',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
       },
       {
         name:'订单',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
       },
       {
         name:'帐单',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
         isSplot:true
       },
       {
         name:'报表',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
       },{
         name:'订单',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
       },
       {
         name:'帐单',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
         isSplot:true
       },
       {
         name:'报表',
-        url:"../../images/top/b1.png",
+        imgUrl:"../../images/top/b1.png",
+        url:"",
       }
     ]
   },
@@ -75,7 +84,9 @@ Page({
 
   tapBrand:function(e){
     console.log("tap brand");
-    
+    wx.navigateTo({
+      url:'../details/details?imgUrl=' + e.currentTarget.dataset.item.url
+    })
 
   }
 })

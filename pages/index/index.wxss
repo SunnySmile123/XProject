@@ -14,14 +14,14 @@
 	line-height: 6rem;
 	border-bottom: 1px solid #ddd;
 	background-color: #fff;
-
+	text-align: center;
 }
 
 .imgItem{
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-
+	vertical-align: middle;
 }
 
  /*不支持 :nth-child(2);*/

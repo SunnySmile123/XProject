@@ -16,15 +16,15 @@
   <text style="width: 100px; height:30px; display: inline-block">热门</text>
   <text style="width: 100px; height:30px; display: inline-block">饮食</text>
   <text style="width: 100px; height:30px; display: inline-block">服饰</text>
-  <text style="width: 100px; height:30px; display: inline-block">玩乐</text>
+  <text style="width: 100px; height:30px; display: inline-block">玩乐</text>imgUrl
 </scroll-view>
 
  <!-- 分类导航 -->
   <view class="nav-block wrap" >
     <block wx:for="{{navItems}}" > 
-      <view class="wrap-item {{item.isSplot ? 'exp' : ''}}" bindtap="tapBrand" data-id="{{item}}">
-        <image src="{{item.url}}" class="imgItem"></image>
-        <text style="text-align:center">{{item.name}}</text>
+      <view class="wrap-item {{item.isSplot ? 'exp' : ''}}" bindtap="tapBrand" data-item="{{item}}">
+        <image src="{{item.imgUrl}}" class="imgItem"></image>
+        <!--<text style="text-align:center">{{item.name}}</text>-->
       </view>
     </block>
   </view>
